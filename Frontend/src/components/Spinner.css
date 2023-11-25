@@ -1,0 +1,15 @@
+/* Equivalent CSS for Tailwind classes */
+.spin {
+    width: 4rem; /* w-16 in Tailwind is equivalent to 4rem */
+    height: 4rem; /* h-16 in Tailwind is equivalent to 4rem */
+    animation: ping 1s infinite; /* animate-ping in Tailwind */
+    border-radius: 99%; /* rounded-full in Tailwind (to make it a circle) */
+}
+
+/* Keyframe animation for animate-ping class in Tailwind */
+@keyframes ping {
+    75%, 100% {
+        transform: scale(2); /* Animate from 0 to 2x size and back */
+        opacity: 0;
+    }
+}
